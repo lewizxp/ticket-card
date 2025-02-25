@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="stylesheet" href="./assets/css/form.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Conference ticket generator</title>
+
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Form starts -->
+
+  <section  class="container-bilhe">
+    <span class="titulo-jornada">
+      <h1>Sua jornada para a Coding Conf 2025 começa aqui!</h1>
+    </span>
+       <span class="text-confe">
+         <p>Reserve sua vaga na maior conferência de código do ano que vem.</p>
+       </span>
+    
+
+<form action="gerar ticket">
+
+    <p>Enviar Avatar</p>
+
+<div class="input-foto">
+       <label for="fileInput" class=" label-file-container">
+      <img src="./assets/images/icon-upload.svg" alt="upload" class="upload-icone">
+        <p>Arraste e solte ou clique para fazer o upload.</p>
+       </label>
+  
+       <input class="label-foto" type="file" id="fileInput" >
+  
+</div>
+
+     <span class="text-conf">Envie sua foto (JPG ou PNG, tamanho máximo: 500KB).</span>
+   
+
+   
+   <div class="label-nome">
+     <label for="name" class="nome-label">Nome Completo</label>
+     <input type="text" name="nome" id="nome" class="input-nome">
+   </div>
+
+
+   <div class="label-email">
+     <label for="email" class="email-label">Endereço de E-mail</label>
+     <input type="email" name="email" id="email" placeholder="exemplo@email.com" class="input-email"></input>
+   </div>
+  
+   <div class="label-github">
+     <label for="github" class="github-label">Nome de Usuário do GitHub</label>
+    <input type="text" name="github" id="github" placeholder=" @seuusuario" class="input-github">
+   </div>
+  
+</form>
+    <button id="button" class="button-ticket">Gerar Meu Ticket</button>
+  </section>
+
+
+  <!-- Form ends -->
+
+  <!-- Generated tickets starts -->
+<div>
+  <h1>
+    
+      Congrats, <!-- Full Name -->! Your ticket is ready
+  </h1>
+  .
+  
+    We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.
+  
+    Coding Conf
+    Jan 31, 2025 / Austin, TX
+</div>
+
+  <!-- Generated tickets ends -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
